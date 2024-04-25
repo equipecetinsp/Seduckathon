@@ -1,0 +1,198 @@
+*{ 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2e8d7;
+    text-decoration: none;
+}
+
+.container {
+    font-size: 18px;
+    position: relative;
+    z-index: 1;
+    border: 2px solid #000000a4;
+    background-color: transparent;
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 8px;
+    height: 560px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Alinhar itens verticalmente */
+    width: 700px; /* Ajustes a largura conforme necessário */
+}
+
+h2{
+    margin-top: 0px;
+    text-align: center;
+    font-size: larger;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    font-family: vertical;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    scrollbar-width: none; /* Escondendo a barra de rolagem */
+    -moz-overflow-style: none;
+    font-size: 20px;    
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #7FB3D5;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 4px 3px 0px #000000;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #67b3b3;
+    color:#000;
+    box-shadow: 4px 3px 0px #000000;
+}
+
+.image {
+    margin-right: 20px; /* Adicione margem à direita para separar a imagem do formulário */
+}
+
+.imglogin {
+    max-width: 350px;
+    padding: 10px 10px 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .image, .imglogin {
+        display: none;
+    }
+
+    .container {
+        position: relative;
+        z-index: 1;
+        border: 1px solid #2b2366a4;
+        background-color: transparent;
+        padding: 20px;
+        backdrop-filter: blur(20px);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* Alinhar intes verticalmente */
+        width: 270px; /* Ajuste a largura conforme necessário */ 
+        max-height: 600px;
+        font-size: 15px;
+    }
+
+    button {
+        background-color: #7FB3D5;
+        color: #000000;
+        box-shadow: 4px 4px 4px solid #00000086;
+    }
+    button:hover {
+        background-color: #67b3b3;
+        color: #000000;
+    }
+    input[type="text"]
+    input[type="number"]
+    select,
+    textarea{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 760) {
+    .container {
+        position: relative;
+        z-index: 1;
+        border: 1px solid #2b2366a4;
+        background-color: transparent;
+        padding: 20px;
+        backdrop-filter: blur(20px);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* Alinhar itens verticalmente */
+        width: 270px; /* Ajuste a largura conforme necessário */
+        max-height: 300px;
+    }
+}
+
+.token-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0505);
+    z-index: 2;
+    background-color: #163774;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none; /*Oculta  o container por padão */
+    border: 2px solid #444444;
+}
+
+.token-container .token {
+    content: "senha gerada";
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(54, 233, 9);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.token-container button {
+    margin-top: 10px;
+}
+
+#alertMessage {
+    margin-top: 20px;
+    color: #2bea0e;
+    font-size: 18px;
+    display: flex;
+    text-align: center;
+}
+
+ .geradasenha {
+    justify-content: flex-start;
+    display: flex;
+    font-size: 20px;
+    color: rbg(255, 255, 255);
+    margin: auto;
+ }

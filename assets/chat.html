@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe CETI Nossa Senhora do Patrocínio">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilo/style.css">
+    <title>Sala de Atendimento</title>
+    <link rel="icon" href="./img/icone.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="cabeçalho">
+        <!--meu menu de cabeçalho-->
+        <h1 class="logo">Conselheiro Virtual</h1>
+        <nav class="navbar">
+            <!--aonde vai aparecer o menu mobile-->
+            <div class="navbar-toggle" id="navbarToggle">
+                <span class="toggle-icon"></span>
+                <span class="toggle-icon"></span>
+                <span class="toggle-icon"></span>
+            </div>
+            <!--menu de cabeçalho-->
+            <ul class="navbar-menu" id="navbarMenu">
+                <li><a href="https://conselheirovirtual.netlify.app/"><i class="bi bi-house-door icones"> Encerrar/Início</i> <br></a></li>
+                <li><a href="./Atendimento.html" class="bi bi-envelope icones"> Atendimento Presencial</a></li>
+                <li><a href="https://forms.gle/TWiyHfm15SVSFK8b6" class="bi bi-star icones"> 𝘍𝘦𝘦𝘥𝘣𝘢𝘤𝘬</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   <!--chat bot-->
+  
+   <div id="chat-container">
+    <!--caixa onde vai apareçer as mensagens do user/bot!!-->
+    <div id="chatbox" class="chatbox" style="overflow: transparent;">
+        <h1 class="title">Sala de Atendimento</h1>
+        <div class="bot-message"></div>
+    </div>
+    <!--aonde vai aparecer os botoes de input e de enviar as MSG-->
+    <div class="butoes">
+    <input class="input" type="text" id="message-input" placeholder="Digite sua mensagem">
+    <button class="butao" id="btn-submit"><i class="material-icons">send</i></button></div>
+</div>
+</div>
+ <script src="./script/chat.js"></script>
+</body>
+</html>

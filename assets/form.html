@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe CETI Nossa Senhora do Patrocínio">
+    <link rel="stylesheet" href="./estilo/styleform.css">
+    <title>Conselheiro Virtual</title>
+    <link rel="icon" href="./img/icone.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container"> 
+<div class= "image"> 
+        <img class="imglogin" src="./img/ConsVirt.svg" alt="">
+        </div>
+        <form id="emotionForm">
+            <h2>Formulário para Atedimento Virtual dos Estudantes</h2>
+            <div class="Form-grupo">
+             <label for="name">Nome:</label>
+             <input type="text" id="name" name="name" required>
+            </div>
+            <div class="Form-grupo">
+                <label for="age">Idade</label>
+                <input type="number" id="age" name="age" required>
+                <div>
+                <div class="Form-grupo"> 
+                    <label for="gender">Sexo</label>
+                    <select name="gender" id="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Feminino</option>
+                    <option value="other">Outro</option>
+                    </select>
+                <div>
+                <div class="Form-grupo">
+                    <label for="needs">Descreva suas necessidades emocionais na escola</label>
+                    <textarea name="needs" id="needs" cols="30" rows="4"required></textarea>
+                 </div>
+                 <p> </p>
+                    <button type="submit">Enviar</button> 
+                 </form>
+            <div>
+        </div>
+            <script src="./script/form.js"></script>
+</body>
+</html>

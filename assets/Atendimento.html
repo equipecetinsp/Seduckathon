@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipe CETI Nossa Senhora do Patrocínio">
+    <title>Conselheiro Virtual</title>
+    <link rel="stylesheet" href="./estilo/styleform.css">
+    <link rel="icon" href="./img/icone.ico" type="image/x-icon">
+</head>
+<body>
+<div class="container"> 
+    <div class="image"> 
+        <img class="imglogin" src="./img/ConsVirt.svg" alt="">
+    </div>
+
+    <form id="solicitacaoForm">
+        <h2>Solicitação de Atendimento Presencial</h2>
+        <div class="Form-grupo">
+            <label for="estudante">Estudante:</label>
+            <input type="text" id="estudante" required>
+        </div>
+        <div class="Form-grupo">
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" required>
+        </div>
+        <div class="Form-grupo">
+            <label for="gre">GRE:</label>
+            <select id="gre" required></select>
+        </div>
+        <div class="Form-grupo">
+            <label for="municipio">Município:</label>
+            <select id="municipio" required></select>
+        </div>
+        <div class="Form-grupo">
+            <label for="escola">Escola:</label>
+            <select id="escola" required></select>
+        </div>
+        <div class="btn1">
+            <p> </p>
+            <button type="button" id="enviarBtn">Enviar Solicitação</button>
+            <p> </p>
+            <button type="button" id="cancelarBtn">Cancelar</button>
+            <p> </p>
+        </div>
+
+    </form>
+</div>
+<script src="./script/ScriptAten.js"></script>
+</body>
+</html>

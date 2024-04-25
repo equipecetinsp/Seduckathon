@@ -1,0 +1,123 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f2e8d7;
+}
+body {
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+.negrito {
+    font-weight: bold;
+}
+.chat-button {
+    margin-bottom: 10px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #7FB3D5;
+    color: #fff; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; /
+}
+.chat-button:hover {
+    background-color: #A2D5C6;
+}
+/* rodape da pagina */ 
+footer {
+    width: 100%;
+    background-color: #A2D5C6;
+    color: #000; 
+    text-align: center;
+    padding: 15px 10px;
+    margin-top: 82px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 20px;
+    width: 50%;
+}
+
+.chat-button {
+    padding: 15px 20px;
+    display: flex;
+    color: #000;
+    font-size: 15px;
+    text-align: center;
+    box-shadow: 3px 3px 3px #000;
+    font-weight: bold;
+}
+
+.p2 {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+}
+
+.img { 
+    width: 200px;
+    height: auto;
+}
+
+.imagens{
+    display: flex;
+    flex-direction: row;
+}
+.mae{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px auto;
+}
+ 
+.conteudo {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    body {
+        text-align: left;
+        text-align: center; /* Adjusting text alignment for smaller screens */
+    }
+
+    .imagens {
+      margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        width: 90%; /* Making paragraphs take full width on smaller screens */
+    }
+
+    .chat-button {
+        font-size: 18px; /* Adjusting button font size for smaller screens */
+        padding: 15px 15px; /* Adjusting button padding for smaller screens */
+    }
+
+    .img {
+        width: 150px; /* Adjusting image size for smaller screens */
+    }
+
+    .mae {
+        margin: 50px auto;
+        border: 3px solid #000;
+        max-width: 350px;
+    }
+
+    .conteudo {
+        flex-direction: column;
+        text-align: justify; /* Adjusting content direction for smaller screens */
+    }
+}
