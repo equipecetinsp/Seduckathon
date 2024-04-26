@@ -7,9 +7,13 @@ body {
     margin: 0;
     text-align: justify;
 }
+
+/* Deixa texto em negrito */
 .negrito {
     font-weight: bold;
 }
+
+/* Botão de inicia conversa */
 .chat-button {
     margin-bottom: 10px;
     text-decoration: none;
@@ -19,7 +23,18 @@ body {
     padding: 10px 20px;
     border: none;
     border-radius: 5px; 
-    cursor: pointer; /
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0px 12px 0px#000 0px 12px 28px; 
+}
+
+.chat-button:active{
+     transform: translateX(3px) translateY(3px);
+
 }
 .chat-button:hover {
     background-color: #A2D5C6;
@@ -34,16 +49,21 @@ footer {
     margin-top: 82px;
 }
 
+
+/* deixa todos os intens dentro da div em colunas */
 div{
     display: flex;
     flex-direction: column;
 }
 
+/* conteudo da pagina */
 p {
     font-size: 20px;
     width: 50%;
 }
 
+
+/* botão de inicia */
 .chat-button {
     padding: 15px 20px;
     display: flex;
@@ -54,21 +74,26 @@ p {
     font-weight: bold;
 }
 
+/* alinha todo texto no centro */
 .p2 {
     text-align: center;
     margin: auto;
     font-size: 15px;
 }
 
+/* tamanho e altura das imagens na tela inicial */
 .img { 
     width: 200px;
     height: auto;
 }
 
+/* posiciona as imagens um ao lado da outra */
 .imagens{
     display: flex;
     flex-direction: row;
 }
+
+/* alinhar no centro todo o conteudo do site */
 .mae{
     display: flex;
     align-items: center;
@@ -76,6 +101,7 @@ p {
     margin: 90px auto;
 }
  
+/* alinhar no centro */
 .conteudo {
     align-items: center;
     display: flex;
@@ -83,10 +109,11 @@ p {
 }
 
 
+/* fazer com que abaixo de 768px a tela fique responsiva para dispositivos moveis */
 @media (max-width: 768px) {
     body {
         text-align: left;
-        text-align: center; /* Adjusting text alignment for smaller screens */
+        text-align: center; 
     }
 
     .imagens {
@@ -98,26 +125,27 @@ p {
     }
 
     p {
-        width: 90%; /* Making paragraphs take full width on smaller screens */
+        width: 90%; 
     }
 
     .chat-button {
-        font-size: 18px; /* Adjusting button font size for smaller screens */
-        padding: 15px 15px; /* Adjusting button padding for smaller screens */
+        font-size: 18px; 
+        padding: 15px 15px; 
     }
 
     .img {
-        width: 150px; /* Adjusting image size for smaller screens */
+        width: 150px;
     }
 
     .mae {
         margin: 50px auto;
         border: 3px solid #000;
         max-width: 350px;
+        border-radius: 1%;
     }
 
     .conteudo {
         flex-direction: column;
-        text-align: justify; /* Adjusting content direction for smaller screens */
+        text-align: justify; 
     }
 }

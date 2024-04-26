@@ -13,6 +13,7 @@ body{
     text-decoration: none;
 }
 
+/*Estilização e centralização dos elementos na página*/
 .container {
     font-size: 18px;
     position: relative;
@@ -26,8 +27,8 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-around;
-    align-items: center; /* Alinhar itens verticalmente */
-    width: 700px; /* Ajustes a largura conforme necessário */
+    align-items: center;
+    width: 700px;
 }
 
 h2{
@@ -45,6 +46,7 @@ label {
     margin-bottom: 5px;
 }
 
+/*Area onde o usuario vai preencher de acordo com suas necessidades*/
 input[type="text"],
 input[type="number"],
 select,
@@ -59,7 +61,7 @@ textarea {
     background: transparent;
     border-bottom: 2px solid #000;
     overflow: hidden;
-    scrollbar-width: none; /* Escondendo a barra de rolagem */
+    scrollbar-width: none;
     -moz-overflow-style: none;
     font-size: 20px;    
 }
@@ -68,6 +70,7 @@ textarea {
     resize: vertical;
 }
 
+/*Estilização dos botões do site*/
 button {
     background-color: #7FB3D5;
     color: rgb(0, 0, 0);
@@ -86,9 +89,13 @@ button:hover {
     color:#000;
     box-shadow: 4px 3px 0px #000000;
 }
+button:active {
+    transform: translateY(3px) translateX(3px);
+}
 
+/* Adicione margem à direita para separar a imagem do formulário */
 .image {
-    margin-right: 20px; /* Adicione margem à direita para separar a imagem do formulário */
+    margin-right: 20px; 
 }
 
 .imglogin {
@@ -96,6 +103,7 @@ button:hover {
     padding: 10px 10px 10px;
 }
 
+/*Adaptação do comportamento dos elementos de acordo com os dispositivos*/
 @media only screen and (max-width: 600px) {
     .image, .imglogin {
         display: none;
@@ -112,8 +120,8 @@ button:hover {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-around;
-        align-items: center; /* Alinhar intes verticalmente */
-        width: 270px; /* Ajuste a largura conforme necessário */ 
+        align-items: center; 
+        width: 270px;  
         max-height: 600px;
         font-size: 15px;
     }
@@ -135,6 +143,7 @@ button:hover {
     }
 }
 
+
 @media only screen and (min-width: 760) {
     .container {
         position: relative;
@@ -147,8 +156,8 @@ button:hover {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: space-around;
-        align-items: center; /* Alinhar itens verticalmente */
-        width: 270px; /* Ajuste a largura conforme necessário */
+        align-items: center;
+        width: 270px; 
         max-height: 300px;
     }
 }
@@ -163,7 +172,7 @@ button:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    display: none; /*Oculta  o container por padão */
+    display: none;
     border: 2px solid #444444;
 }
 

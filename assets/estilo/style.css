@@ -34,6 +34,7 @@ body {
     gap: 32px;
 }
 
+/* area de menu mobile */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -71,6 +72,7 @@ body {
     margin-bottom: 5px;
 }
 
+/* Estilização dos elementos da div principal*/
 #chat-container {
     background-color: #2d3741;
     max-width: 100vh;
@@ -83,6 +85,7 @@ body {
     box-shadow: 6px 6px 4px 4px #414146ec;
 }
 
+/*Estilização da caixa aonde ficara as mensagens do chat*/
 .chatbox {
     height: 100%;
     overflow: scroll;
@@ -95,12 +98,14 @@ body {
  overflow-x: visible;
 }
 
+/*Botões quê ficarão um ao lado do outro*/
 .butoes {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+/*Estilização do botão, e definir o comportamento da posição entre eles*/
 .input, .butao {
    display: flex;
    align-items: flex-start;
@@ -157,17 +162,6 @@ body {
     display: flex;
 }
 
-/* Estilos para as mensagens do usuário */
-.user-message, .bot-message {
-    display: flex;
-}
-.typing-indicator {
-    font-style: italic;
-    color: #888;
-    background-color: #89c1e7;
-
-}
-
 .user-message, .bot-message {
     display: flex;
     justify-content: center; 
@@ -219,7 +213,7 @@ body {
     background-color: #9ce090;
     margin-bottom: 5px;
 }
-/* quando a tela for menor que 768px ela passa essas configurações para meu site*/
+/* Quando a tela for menor que 768px ela passa a ter essas configurações para o site*/
 @media screen and (max-width: 768px) {
     #chat-container{
         max-width: 350px;
@@ -272,7 +266,6 @@ body {
         max-width: 70%; 
     }
     
-    /* Estilos para as mensagens do bot */
     .bot-message {
         background-color: #91eba6; 
         color: #333; 

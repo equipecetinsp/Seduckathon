@@ -61,7 +61,7 @@ const createMessageElement = (message, className, iconClass, isBotMessage) => {
     const messageDiv = document.createElement("div");
     messageDiv.classList.add(className);
 
-    // aplicando um icone
+    // aplicando o icone
     messageDiv.appendChild(iconSpan);
 
     // que a mensagem seja criada dentro da div passada um paragrafo <p>.
@@ -119,7 +119,7 @@ const handleChat = () => {
 // um evento para quando ouver um clique 
 document.getElementById("btn-submit").addEventListener("click", handleChat);
 
-// evento quando o usuario cliquar na tecla enter
+// evento quando o usuario clicar na tecla enter
 chatInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
         e.preventDefault();
@@ -127,7 +127,8 @@ chatInput.addEventListener("keydown", (e) => {
     }});
 
 
-// parte em que o fromulario emviar as mensagens pra ca e o chat cria a primeira pergunta 
+// parte em que o formulario enviar as mensagens pra ca com base nas informações  
+// de acordo com a necessidade do USER o chat VAI cria a primeira pergunta 
 document.addEventListener("DOMContentLoaded", function() {
     const params = new URLSearchParams(window.location.search);
     const userName = params.get('name');
