@@ -9,33 +9,42 @@
     <link rel="icon" href="./img/icone.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- aonde ficar os elementos da div principal -->
 <div class="container"> 
     <div class="image"> 
         <img class="imglogin" src="./img/ConsVirt.svg" alt="">
     </div>
 
+    <!-- formulario aonde o usuario vai preencher com as informações escolares-->
     <form id="solicitacaoForm">
+        <!-- titulo do site -->
         <h2>Solicitação de Atendimento Presencial</h2>
+        <!-- aonde o usuario vai preencher com seu nome-->
         <div class="Form-grupo">
             <label for="estudante">Estudante:</label>
             <input type="text" id="estudante" required>
         </div>
+        <!-- informações de matricula do aluno -->
         <div class="Form-grupo">
             <label for="matricula">Matrícula:</label>
             <input type="text" id="matricula" required>
         </div>
+        <!-- informações sobre a GRE -->
         <div class="Form-grupo">
             <label for="gre">GRE:</label>
             <select id="gre" required></select>
         </div>
+        <!-- informações sobre o municipio -->
         <div class="Form-grupo">
             <label for="municipio">Município:</label>
             <select id="municipio" required></select>
         </div>
+        <!-- informações sobre a escola do aluno-->
         <div class="Form-grupo">
             <label for="escola">Escola:</label>
             <select id="escola" required></select>
         </div>
+        <!-- area de botões -->
         <div class="btn1">
             <p> </p>
             <button type="button" id="enviarBtn">Enviar Solicitação</button>
