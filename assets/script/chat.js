@@ -73,7 +73,7 @@ const createMessageElement = (message, className, iconClass, isBotMessage) => {
 
 // Gera respostas de acordo com a API 
 const generateResponse = () => {
-    const API_KEY = "";
+    const API_KEY = "sk-proj-W66lDxET0AoWuDrKjFTtT3BlbkFJCYaMk0Dgn37IEFZYGyKj";
     const API_URL = "https://api.openai.com/v1/chat/completions";
     const requestOptions = {
         method: "POST",
